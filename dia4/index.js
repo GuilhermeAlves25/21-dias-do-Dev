@@ -1,14 +1,13 @@
-let nome = prompt("Digite seu nome")
-let idade = Number (prompt("Digite sua idade"))
-let carteira = prompt("Você possui carteira de motorista?")
-let carro = prompt("Você possui carro?")
+let fome = prompt("Você esta com fome?")
+let dinheiro = prompt("Você tem dinheiro?")
+let restaurante = prompt("O restaurante esta aberto?")
 
-if (idade < 18 && carteira === "não"){
-    console.log(nome + ",você não pode dirigir!")
+if (fome === "não" || dinheiro === "não"){
+    console.log("Hoje a janta sera em casa!")
 }
-else if(idade >= 18 && carteira === "sim" && carro === "não"){
-    console.log(nome + ", você pode dirigir mas não possui carro")
+else if(fome === "sim" && dinheiro === "sim" && restaurante === "não"){
+    console.log("Peça um delivery")
 }
-else if(idade >= 18 && carteira === "sim" && carro === "sim"){
-    console.log(nome + ", você será o motorista!")
+else if(fome === "sim" && dinheiro === "sim" && restaurante === "sim"){
+    console.log("Hoje o jantar vai ser no seu restaurante favorito")
 }
